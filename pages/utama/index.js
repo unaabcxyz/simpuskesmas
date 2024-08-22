@@ -5,7 +5,6 @@ import styles from '../../styles/Main.module.css';
 import React, { useEffect, useState, useRef } from "react";
 import useDeviceSize from "@/components/UseDevice/useDeviceSize";
 import Image from "next/image";
-import logoPuskesMas from '../Image/logoPuskesMas.png';
 import Header from "../Auth/Header";
 async function handleLogout() {
   const resp = await fetch('/api/logout', {
@@ -237,9 +236,7 @@ const Main = () => {
                   height={styleHeader.logo.width + 150} />
               </div>) : (<div className="d-inline-block align-top w-100 align-top">
                 <div className="mx-auto" style={{ width: 'fit-content' }}>
-                  <Image src={logoPuskesMas}
-                    width={styleHeader.logo.width + 150}
-                    height={styleHeader.logo.width + 150} />
+                  <img src="http://simpuskesmasjungkat.online/iconFoto/logoPuskesmas.png" style={{ width: styleHeader.logo.width + 150 + "px", height: styleHeader.logo.width + 150 + "px", }} />
                 </div>
 
               </div>)}
