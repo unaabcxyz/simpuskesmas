@@ -2,8 +2,7 @@ import styles from '../../styles/Main.module.css';
 import React, { useEffect, useState, useRef } from "react";
 import useDeviceSize from "@/components/UseDevice/useDeviceSize";
 import Image from "next/image";
-import arrowMenu from '../Image/arrowMenu.png';
-import logoPuskesMas from '../Image/logoPuskesMas.png';
+
 // import { Router } from 'next/router';
 import { useRouter } from 'next/router';
 const Header = ({ toggleSideBar }) => {
